@@ -1,0 +1,5 @@
+spring:
+    application:
+        name: pgzx-client
+    profiles:
+        active: dev

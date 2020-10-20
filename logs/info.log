@@ -1,0 +1,13 @@
+[2020-10-20 15:53:20] INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting PgzxClientApplication on macs-Mac-mini.local with PID 3453 (/Users/workSpan/pgzx-client/target/classes started by mac in /Users/workSpan/pgzx-client)
+[2020-10-20 15:53:20] INFO  org.springframework.boot.SpringApplication 655 logStartupProfileInfo - The following profiles are active: dev
+[2020-10-20 15:53:21] INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+[2020-10-20 15:53:21] INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2020-10-20 15:53:21] INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+[2020-10-20 15:53:21] INFO  com.zaxxer.hikari.HikariDataSource 80 <init> - base - Starting...
+[2020-10-20 15:53:22] INFO  com.zaxxer.hikari.HikariDataSource 82 <init> - base - Start completed.
+[2020-10-20 15:53:22] INFO  com.zaxxer.hikari.HikariDataSource 80 <init> - storage - Starting...
+[2020-10-20 15:53:22] INFO  com.zaxxer.hikari.HikariDataSource 82 <init> - storage - Start completed.
+[2020-10-20 15:53:22] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource 132 addDataSource - dynamic-datasource - load a datasource named [base] success
+[2020-10-20 15:53:22] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource 132 addDataSource - dynamic-datasource - load a datasource named [storage] success
+[2020-10-20 15:53:22] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource 237 afterPropertiesSet - dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+[2020-10-20 15:53:22] INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started PgzxClientApplication in 2.607 seconds (JVM running for 3.519)

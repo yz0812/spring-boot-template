@@ -1,0 +1,32 @@
+server:
+  #服务端口
+  port: 8090
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    org.springframework: error
+  config: classpath:log4j2.xml
+
+spring:
+  datasource:
+    dynamic:
+      primary: base #设置默认的数据源或者数据源组,默认值即为master
+      strict: true #设置严格模式,默认false不启动. 启动后在未匹配到指定数据源时候回抛出异常,不启动会使用默认数据源.
+      datasource:
+        base:
+          url: jdbc:sqlserver://192.168.3.4:1433;DatabaseName=Q1_Base
+          username: sa
+          password: 123456
+          driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        storage:
+          url: jdbc:sqlserver://192.168.3.4:1433;DatabaseName=Q1_Storage
+          username: sa
+          password: 123456
+          driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+mybatis-plus:
+  # 如果是放在src/main/java目录下 classpath:/com/*/*/mapper/*Mapper.xml
+  # 如果是放在resource目录 classpath:/mapper/**.xml
+  mapper-locations: classpath:/mapper/*/**.xml
